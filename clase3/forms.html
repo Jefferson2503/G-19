@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <!---el input va a depender del atributo que le demos para definir su comportamiento-->
+            <label for="input-nombre">Nombre Completo:</label> <!---el label es una etiqueta -->
+            <input type="text" id="input-nombre" placeholder="ej. Mariano Mayo Ccarhuas" pattern="[A-Za-z][a-zA-Z]{1,20}$" /> <!--el id es un identificador unico-->
+            <!-- para lo de arriba son patrones regulares:el pattern para poner caracteres de mayuscula o minusculas----->
+            <br />
+            <label for="input-edad">Edad:</label>
+            <input type="text" id="input-edad" placeholder="Ej. 18" />
+            <br />
+            <label for="input-contraseña">Contraseña:</label>
+            <input type="password" id="input-contraseña"  minlength="6" /> <!--- el minlength para que tenga al menos 6 caracteristicas-->
+            <br />
+            <h4>Género</h4>
+            <input type="radio" id="radio-masculino" name="genero" /> <!--con el name podemos escoger el genero que somos-->
+            <label for="radio-masculino">Masculino</label>
+            <br />
+            <input type="radio" id="radio-femenino" name="genero" />
+            <label for="radio-femenino">Femenino</label>
+            <br />
+            <h4>Hobbies</h4>
+            <label for="musica">Escuchar musica</label>
+            <input type="checkbox" id="musica" />
+            <br />
+            <label for="dormir">Dormir</label>
+            <input type="checkbox" id="dormir" />
+            <br />
+            <label for="youtube">Ver youtube</label>
+            <input type="checkbox" id="youtube" />
+            <br />
+            <h4>Ubicación</h4>
+            <label for="departamentos">Dónde resides?</label>    
+            <select id="departamentos">
+                <option selected disabled>Selecciona una:</option>
+                <option>Arequipa</option>
+                <option>Lima</option> <!--el selected es para escoger el que quieres que aparesca primero-->
+                <option>Tacna</option>
+                <option>Trujillo</option>
+                <option>Callao</option>
+            </select>
+            <h4>País</h4>
+            <input list="pais" />
+            <datalist id="pais">
+                <option>Perú</option>
+                <option>Chile</option>
+                <option>Colombia</option>
+                <option>México</option>
+            </datalist>
+            <br/>
+            <label for="input-fecha"> Fecha de Nacimiento:</label>
+            <input type="date" id="input-fecha" />
+            <br />
+            <label for="input-hora">Hora:</label>
+            <input type="time" id="input-hora" />
+            <br />
+            <input type="submit" value="Enviar" /> 
+
+        </form>
+    </body>
+</html>
