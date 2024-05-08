@@ -62,6 +62,9 @@ tr:nth-of-type(odd) {
     background-color: aquamarine;
 }
 
+/*Los elementos article que sean hermanos
+y va a buscar uno que coincide con ese numero*/
+
 article:nth-child(2) {
     background-color: chocolate;
 }
