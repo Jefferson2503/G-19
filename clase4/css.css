@@ -14,6 +14,7 @@ p {
 }
 .importantesubrayado {
     text-decoration: underline;
+    background-color: blueviolet;
 }
 
 /*selec de id*/
@@ -26,4 +27,41 @@ p {
 ul > li{
     color: blue;
     text-decoration: underline;
+}
+
+/* .clase > etiqueta */
+/* #id > .clase*/
+
+/* selector selectorhijo - todos los elementos hijos*/
+ul li {
+    font-weight:  bold;
+}
+
+/* ~ es para seleccionar hermanos */
+/* el * es un selector que afecta a todo*/
+.contenido ~ div {
+    border: 2px solid peru;
+}
+
+/*el operador , es como un table y td y th */
+table,td,th {
+    border: 2px solid black;
+}
+
+/*Pseudoclases -- es un parametro*/
+/*Hover, es cuando spasamos el mouse por encima*/
+tr:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+/*Lo que hace el nth-of-type : even - par y odd - impar*/
+tr:nth-of-type(even) {
+    background-color: gray;
+}
+tr:nth-of-type(odd) {
+    background-color: aquamarine;
+}
+
+article:nth-child(2) {
+    background-color: chocolate;
 }
