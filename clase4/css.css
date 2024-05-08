@@ -1,0 +1,29 @@
+/*Selectores de etiqueta*/
+h1 {
+    color: peru;
+    font-family: Arial;
+}
+p {
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+/*selec de clases son para elementos*/
+.importante {
+    background-color: aquamarine;
+}
+.importantesubrayado {
+    text-decoration: underline;
+}
+
+/*selec de id*/
+#introduccion {
+    font-size: 20px;
+}
+/*Aqui vamos a poder jugar con la estructura y unos operadores*/
+/* el operador > hace referencia a los primeros elementos hijos*/
+
+ul > li{
+    color: blue;
+    text-decoration: underline;
+}
